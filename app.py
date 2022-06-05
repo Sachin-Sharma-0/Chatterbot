@@ -16,7 +16,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/get")
-#function for the bot response
+#function for bot response
 def get_bot_response():
     userText = request.args.get('msg')
     return str(englishBot.get_response(userText))
